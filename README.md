@@ -1,3 +1,3 @@
 # tamaga-website
 
-Website for architecture studio.
+Website for architecture studio. Work in progress

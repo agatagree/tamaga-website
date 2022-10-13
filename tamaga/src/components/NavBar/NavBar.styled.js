@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
@@ -7,7 +8,7 @@ export const StyledNav = styled.nav`
   padding: 0 30px;
 `;
 
-export const StyledNavButton = styled.button`
+export const StyledNavButton = styled(NavLink)`
   font-size: 16px;
   margin: 5px 10px 10px 10px;
   padding: 15px 0px 2px 0px;

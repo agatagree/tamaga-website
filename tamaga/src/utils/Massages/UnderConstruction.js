@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const WrongWebsite = () => {
+export const UnderConstruction = () => {
   return (
     <StyledLayout>
-      <StyledImg src="https://img.freepik.com/free-vector/tiny-people-examining-operating-system-error-warning-web-page-isolated-flat-illustration_74855-11104.jpg?w=996&t=st=1665684552~exp=1665685152~hmac=ac9bf94fac80e1abda4518b89b42c3cfc6658bcfce715107555da20cd55f4ea7" />
-      <h3>Ups, page not found</h3>
+      <StyledImg src="https://img.freepik.com/premium-vector/construction-website-page-web-page-vector-illustration_123447-3974.jpg?w=826" />
+      <h3>Sorry, page under construction</h3>
     </StyledLayout>
   );
 };

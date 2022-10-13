@@ -3,8 +3,8 @@ import { StyledNav, StyledNavButton } from "./NavBar.styled";
 export const NavBar = () => {
   return (
     <StyledNav>
-      <StyledNavButton>projects</StyledNavButton>
-      <StyledNavButton>about</StyledNavButton>
+      <StyledNavButton to="/projects">projects</StyledNavButton>
+      <StyledNavButton to="/about">about</StyledNavButton>
     </StyledNav>
   );
 };

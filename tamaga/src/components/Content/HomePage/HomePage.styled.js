@@ -80,7 +80,6 @@ export const StyledSocialSection = styled.div`
 
   a {
     text-decoration: none;
-    color: #353536;
     font-size: 32px;
     margin: 12px;
   }

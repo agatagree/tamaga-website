@@ -160,7 +160,6 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: lightcoral;
 }
 
 .content {
@@ -184,7 +183,6 @@ nav {
   display: flex;
   height: 100%;
   min-width: 280px;
-  background-color: lig;
 }
 @media (max-width: 768px) {
   .intro-wrapper {
@@ -240,4 +238,21 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.message-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.message-img {
+  max-height: 80%;
+  max-width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=index.css.map */

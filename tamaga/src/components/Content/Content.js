@@ -3,7 +3,7 @@ import { HomePage } from "./HomePage/HomePage";
 // import { ProjectsList } from "./ProjectsList/ProjectsList";
 // import { About } from "./About/About";
 // import { Contact } from "./Contact/Contact";
-// import { WrongWebsite} from "../../utils/Massages/WrongWebsite"
+import { WrongWebsite} from "../../utils/Messages/WrongWebsite"
 
 export const Content = () => {
   return (
@@ -12,8 +12,8 @@ export const Content = () => {
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/projects" element={<ProjectsList />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<WrongWebsite />} /> */}
+        <Route path="/contact" element={<Contact />} />*/}
+        <Route path="*" element={<WrongWebsite />} />
       </Routes>
     </div>
   );

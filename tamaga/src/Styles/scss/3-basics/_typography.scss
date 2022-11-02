@@ -1,0 +1,74 @@
+body {
+  letter-spacing: 0;
+  color: $blue500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+//Header
+.H01 {
+  font-weight: $font-weights700;
+  font-size: $font-size56;
+  line-height: $font-lh115;
+  letter-spacing: $font-ls-2;
+
+  &--regular {
+    @extend .H01;
+    font-weight: $font-weights400;
+  }
+}
+
+.H03 {
+  font-weight: $font-weights400;
+  font-size: $font-size48;
+  line-height: $font-lh120;
+  letter-spacing: $font-ls-4;
+}
+
+.H04 {
+  font-weight: $font-weights700;
+  font-size: $font-size36;
+  line-height: $font-lh125;
+  letter-spacing: $font-ls-4;
+}
+
+.H05 {
+  font-weight: $font-weights400;
+  font-size: $font-size30;
+  line-height: $font-lh125;
+  letter-spacing: $font-ls2;
+}
+
+.H06 {
+  font-weight: $font-weights400;
+  font-size: $font-size24;
+  line-height: $font-lh125;
+  letter-spacing: $font-ls-4;
+}
+
+.H07 {
+  font-weight: $font-weights400;
+  font-size: $font-size18;
+  line-height: $font-lh120;
+}
+
+.H08 {
+  font-weight: $font-weights400;
+  font-size: $font-size14;
+  line-height: $font-lh120;
+}
+
+
+//Body
+.body-text {
+  @extend body;
+  font-weight: $font-weights400;
+  font-size: $font-size16;
+  line-height: $font-lh140;
+}
+
+.body-text-sm {
+  @extend body;
+  font-weight: $font-weights400;
+  font-size: $font-size14;
+  line-height: $font-lh140;
+}

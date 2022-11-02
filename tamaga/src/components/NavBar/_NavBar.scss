@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: $spacing20 $spacing40;
+}
+
+.nav-links {
+  display: flex;
+  gap: $spacing40;
+}

@@ -1,19 +1,19 @@
-import { Footer } from "./components/Footer/Footer";
+// import { Footer } from "./components/Footer/Footer";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Content } from "./components/Content/Content";
 import { BrowserRouter } from "react-router-dom";
-import { GlobalStyle, Layout } from "./utils/Global.styled"
+import { UiKit } from "./Styles/UiKit";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <GlobalStyle />
-        <Layout>
+      {/* <UiKit /> */}
+        <div className="layout">
           <NavBar />
           <Content />
           {/* <Footer /> */}
-        </Layout>
+        </div>
       </BrowserRouter>
     </>
   );

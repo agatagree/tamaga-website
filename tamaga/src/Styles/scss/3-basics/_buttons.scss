@@ -1,0 +1,97 @@
+//padding
+$btn-padding-lg: 13px 23px 14px 23px;
+$btn-padding-sm: 11px 23px 12px 23px;
+
+//border
+$btn-border-primary-default: 1px solid $blue500;
+
+//border-radius
+$btn-radius-primary: 2px;
+
+//bg-color
+$btn-bg-default: transparent;
+$btn-bg-hover: $blue500;
+$btn-bg-active: $blue500;
+$btn-bg-disabled: $grey100;
+
+//color
+$btn-color-hover: $grey100;
+$btn-color-active: $grey100;
+$btn-color-disabled: $dark-grey200;
+
+.btn {
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+}
+
+//primary
+.btn-primary {
+  border: $btn-border-primary-default;
+  border-radius: $btn-radius-primary;
+  background-color: $btn-bg-default;
+
+  &:hover{
+  background-color: $btn-bg-hover;
+  color: $btn-color-hover;
+  transition: background-size 0.25s ease-in;
+  }
+  &:active{
+  background-color: $btn-bg-hover;
+  color: $btn-color-hover;
+  transition: background-size 0.25s ease-in;
+  }
+  &:disabled{
+  background-color: $btn-bg-disabled;
+  color: $btn-color-disabled;
+  transition: background-size 0.25s ease-in;
+  }
+}
+
+.btn-primary-lg-default {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .body-text;
+  padding: $btn-padding-lg;
+}
+
+.btn-primary-sm-default {
+  @extend .btn-primary-lg-default;
+  @extend .body-text-sm;
+  padding: $btn-padding-sm;
+}
+
+//secondary//////////////////////////
+// .btn-primary {
+//   border: none;
+//   border-radius: $btn-radius-primary;
+//   background-color: $btn-bg-default;
+
+//   &:hover{
+//   background-color: $btn-bg-hover;
+//   color: $btn-color-hover;
+//   }
+//   &:active{
+//   background-color: $btn-bg-hover;
+//   color: $btn-color-hover;
+//   }
+//   &:disabled{
+//   background-color: $btn-bg-disabled;
+//   color: $btn-color-disabled;
+//   }
+// }
+
+// .btn-primary-lg-default {
+//   @extend .btn;
+//   @extend .btn-primary;
+//   @extend .body-text;
+//   padding: $btn-padding-lg;
+// }
+
+// .btn-primary-sm-default {
+//   @extend .btn-primary-lg-default;
+//   @extend .body-text-sm;
+//   padding: $btn-padding-sm;
+// }

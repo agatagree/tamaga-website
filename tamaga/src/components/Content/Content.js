@@ -4,11 +4,10 @@ import { ProjectsList } from "./ProjectsList/ProjectsList";
 import { About } from "./About/About";
 import { Contact } from "./Contact/Contact";
 import { WrongWebsite} from "../../utils/Massages/WrongWebsite"
-import { StyledContent } from "../../utils/Global.styled";
 
 export const Content = () => {
   return (
-    <StyledContent>
+    <div className="content">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsList />} />
@@ -16,6 +15,6 @@ export const Content = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<WrongWebsite />} />
       </Routes>
-    </StyledContent>
+    </div>
   );
 };

@@ -1,0 +1,18 @@
+
+
+//1 - HELPERS
+@import "../Styles/scss/1-helpers/_colors.scss";
+@import "../Styles/scss/1-helpers/_base.scss";
+@import "../Styles/scss/1-helpers/_font.scss";
+@import "../Styles/scss/1-helpers/_variables.scss";
+
+//3-BASICS
+@import "../Styles/scss/3-basics/_typography.scss";
+@import "../Styles/scss/3-basics/_buttons.scss";
+@import "../Styles/scss/3-basics/_links.scss";
+
+//4-LAYOUT
+@import "../Styles/scss/4-layout/_layout.scss";
+
+//6-PAGES
+@import "../components/NavBar/_NavBar";

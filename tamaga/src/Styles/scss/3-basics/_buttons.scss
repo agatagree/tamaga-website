@@ -23,7 +23,8 @@ $btn-color-disabled: $dark-grey200;
   box-sizing: border-box;
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: block;
+  width: fit-content;
 }
 
 //primary
@@ -35,14 +36,17 @@ $btn-color-disabled: $dark-grey200;
   &:hover{
   background-color: $btn-bg-hover;
   color: $btn-color-hover;
+  transition: background-size 0.25s ease-in;
   }
   &:active{
   background-color: $btn-bg-hover;
   color: $btn-color-hover;
+  transition: background-size 0.25s ease-in;
   }
   &:disabled{
   background-color: $btn-bg-disabled;
   color: $btn-color-disabled;
+  transition: background-size 0.25s ease-in;
   }
 }
 

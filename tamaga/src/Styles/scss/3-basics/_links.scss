@@ -36,10 +36,6 @@ $link-border-hover: 10px solid $yellow500;
   @extend .link18;
   &:hover{
     background-image: none;
-    // background-repeat: no-repeat;
-    // background-size: 100% 10px;
-    // background-position: bottom;
-    // transition: background-size 0.25s ease-in;
     border: none;
   }
 }

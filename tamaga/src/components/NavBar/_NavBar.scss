@@ -1,10 +1,10 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: $spacing20 $spacing40;
 }
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: $spacing40;
 }

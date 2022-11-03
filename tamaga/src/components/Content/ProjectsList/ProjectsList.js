@@ -1,4 +1,4 @@
-import { UnderConstruction } from "../../../utils/Massages/UnderConstruction";
+import { UnderConstruction } from "../../../utils/Messages/UnderConstruction";
 
 export const ProjectsList = () => {
     return <UnderConstruction />;

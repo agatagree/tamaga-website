@@ -34,6 +34,11 @@ $link-border-hover: 10px solid $yellow500;
 
 .link18-logo {
   @extend .link18;
+
+  &--bold {
+    @extend .H07;
+    font-weight: $font-weights700;
+  }
   &:hover{
     background-image: none;
     border: none;

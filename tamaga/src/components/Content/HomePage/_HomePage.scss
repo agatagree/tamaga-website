@@ -1,6 +1,6 @@
 .intro-wrapper {
   display: flex;
-  height: 100%;
+  height: 100vh;
   min-width: 280px;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -13,8 +13,8 @@
 
 .intro-gallery {
   overflow: hidden;
-  position: fixed;
-  width: 50%;
+  // position: fixed;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
@@ -32,10 +32,14 @@
   }
 }
 
+.intro-content-layout {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .intro-content-wrapper {
   flex: 1 0 50%;
-  overflow-y: auto;
-  padding: 30px;
   display: flex;
 }
 
@@ -46,6 +50,7 @@
   text-align: center;
   display:flex;
   flex-direction: column;
+  padding:  0 $spacing40;
   gap: $spacing80;
 }
 
@@ -53,4 +58,17 @@
   display: flex;
   flex-direction: column;
   gap: $spacing20;
+}
+
+.main-content {
+  padding: 0 $spacing40;
+}
+.offer-section {
+  padding: $spacing180 0;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.projects-slider {
+  background-color: lightgreen;
 }

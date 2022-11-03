@@ -1,7 +1,13 @@
-nav {
+.nav-hidden {
   display: flex;
-  justify-content: space-between;
   padding: $spacing20 $spacing40;
+  justify-content: flex-end;
+}
+
+.nav-full {
+  display: flex;
+  padding: $spacing20 $spacing40;
+  justify-content: space-between;
 }
 
 .nav-links {

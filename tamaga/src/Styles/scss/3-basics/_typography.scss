@@ -6,14 +6,14 @@ body {
 
 //Header
 .H01 {
-  font-weight: $font-weights700;
+  font-weight: $font-weights400;
   font-size: $font-size56;
   line-height: $font-lh115;
   letter-spacing: $font-ls-2;
 
-  &--regular {
+  &--bold {
     @extend .H01;
-    font-weight: $font-weights400;
+    font-weight: $font-weights700;
   }
 }
 
@@ -22,6 +22,11 @@ body {
   font-size: $font-size48;
   line-height: $font-lh120;
   letter-spacing: $font-ls-4;
+
+  &--bold {
+    @extend .H03;
+    font-weight: $font-weights700;
+  }
 }
 
 .H04 {
@@ -49,6 +54,11 @@ body {
   font-weight: $font-weights400;
   font-size: $font-size18;
   line-height: $font-lh120;
+
+  &--bold {
+    @extend .H01;
+    font-weight: $font-weights700;
+  }
 }
 
 .H08 {

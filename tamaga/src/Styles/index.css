@@ -9,54 +9,74 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   font-family: "Montserrat", sans-serif !important;
 }
 
+.card-container {
+  background-color: red;
+  aspect-ratio: 4/3;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn-primary-lg-default {
   letter-spacing: 0;
   color: #012B55;
   font-family: "Montserrat", sans-serif;
 }
 
-.H01, .H01--regular {
-  font-weight: 700;
+.H01, .H07--bold, .H01--bold {
+  font-weight: 400;
   font-size: 56px;
   line-height: 115%;
-  letter-spacing: -2%;
+  letter-spacing: 0.04em;
 }
-.H01--regular {
-  font-weight: 400;
+.H01--bold {
+  font-weight: 700;
 }
 
-.H03, .link48-t {
+.H03, .link48-t, .H03--bold {
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
+}
+.H03--bold {
+  font-weight: 700;
 }
 
 .H04, .link24-t {
   font-weight: 700;
   font-size: 36px;
   line-height: 125%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
 .H05 {
   font-weight: 400;
   font-size: 30px;
   line-height: 125%;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 .H06, .link24 {
   font-weight: 400;
   font-size: 24px;
   line-height: 125%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
-.H07, .link18, .link18-logo {
+.H07, .link18-logo--bold, .link18, .link18-logo {
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
+}
+.H07--bold {
+  font-weight: 700;
 }
 
 .H08 {
@@ -133,6 +153,9 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   border: none;
 }
 
+.link18-logo--bold {
+  font-weight: 700;
+}
 .link18-logo:hover {
   background-image: none;
   border: none;
@@ -168,10 +191,16 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   flex: 1;
 }
 
-nav {
+.nav-hidden {
   display: flex;
-  justify-content: space-between;
   padding: 20px 40px;
+  justify-content: flex-end;
+}
+
+.nav-full {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
 }
 
 .nav-links {
@@ -181,7 +210,7 @@ nav {
 
 .intro-wrapper {
   display: flex;
-  height: 100%;
+  height: 100vh;
   min-width: 280px;
 }
 @media (max-width: 768px) {
@@ -196,8 +225,7 @@ nav {
 
 .intro-gallery {
   overflow: hidden;
-  position: fixed;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
@@ -217,10 +245,14 @@ nav {
   }
 }
 
+.intro-content-layout {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .intro-content-wrapper {
   flex: 1 0 50%;
-  overflow-y: auto;
-  padding: 30px;
   display: flex;
 }
 
@@ -231,6 +263,7 @@ nav {
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 0 40px;
   gap: 80px;
 }
 
@@ -238,6 +271,20 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.main-content {
+  padding: 0 40px;
+}
+
+.offer-section {
+  padding: 180px 0;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.projects-slider {
+  background-color: lightgreen;
 }
 
 .message-layout {

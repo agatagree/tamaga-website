@@ -1,0 +1,12 @@
+.card-container {
+  background-color: red;
+  aspect-ratio: 4/3;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 

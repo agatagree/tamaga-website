@@ -22,6 +22,11 @@ body {
   font-size: $font-size48;
   line-height: $font-lh120;
   letter-spacing: $font-ls-4;
+
+  &--bold {
+    @extend .H03;
+    font-weight: $font-weights700;
+  }
 }
 
 .H04 {

@@ -60,8 +60,15 @@
   gap: $spacing20;
 }
 
+.main-content {
+  padding: 0 $spacing40;
+}
 .offer-section {
   padding: $spacing180 0;
   max-width: 1130px;
   margin: 0 auto;
+}
+
+.projects-slider {
+  background-color: lightgreen;
 }

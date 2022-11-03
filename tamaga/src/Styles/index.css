@@ -9,6 +9,20 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   font-family: "Montserrat", sans-serif !important;
 }
 
+.card-container {
+  background-color: red;
+  aspect-ratio: 4/3;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn-primary-lg-default {
   letter-spacing: 0;
   color: #012B55;
@@ -19,38 +33,41 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   font-weight: 400;
   font-size: 56px;
   line-height: 115%;
-  letter-spacing: -2%;
+  letter-spacing: 0.04em;
 }
 .H01--bold {
   font-weight: 700;
 }
 
-.H03, .link48-t {
+.H03, .link48-t, .H03--bold {
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
+}
+.H03--bold {
+  font-weight: 700;
 }
 
 .H04, .link24-t {
   font-weight: 700;
   font-size: 36px;
   line-height: 125%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
 .H05 {
   font-weight: 400;
   font-size: 30px;
   line-height: 125%;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 .H06, .link24 {
   font-weight: 400;
   font-size: 24px;
   line-height: 125%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
 .H07, .link18-logo--bold, .link18, .link18-logo {
@@ -256,10 +273,18 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text, .link16, .btn
   gap: 20px;
 }
 
+.main-content {
+  padding: 0 40px;
+}
+
 .offer-section {
   padding: 180px 0;
   max-width: 1130px;
   margin: 0 auto;
+}
+
+.projects-slider {
+  background-color: lightgreen;
 }
 
 .message-layout {

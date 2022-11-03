@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 
-export const NavBar = () => {
+export const NavBar = ({ logoHidden }) => {
   return (
-    <nav>
-      <NavLink className="link18-logo" to="/">
-        <span style={{fontWeight: "700"}}>tamaga</span> studio
-      </NavLink>
+    <nav className={`${logoHidden ? "nav-hidden" :"nav-full"}`}>
+      {!logoHidden && (
+        <NavLink className="link18-logo" to="/">
+          <span className="link18-logo--bold">tamaga</span> studio
+        </NavLink>
+      )}
       <div className="nav-links">
         <NavLink className="link18" to="/projects">
           projects

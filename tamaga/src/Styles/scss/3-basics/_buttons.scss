@@ -62,36 +62,3 @@ $btn-color-disabled: $dark-grey200;
   @extend .body-text-sm;
   padding: $btn-padding-sm;
 }
-
-//secondary//////////////////////////
-// .btn-primary {
-//   border: none;
-//   border-radius: $btn-radius-primary;
-//   background-color: $btn-bg-default;
-
-//   &:hover{
-//   background-color: $btn-bg-hover;
-//   color: $btn-color-hover;
-//   }
-//   &:active{
-//   background-color: $btn-bg-hover;
-//   color: $btn-color-hover;
-//   }
-//   &:disabled{
-//   background-color: $btn-bg-disabled;
-//   color: $btn-color-disabled;
-//   }
-// }
-
-// .btn-primary-lg-default {
-//   @extend .btn;
-//   @extend .btn-primary;
-//   @extend .body-text;
-//   padding: $btn-padding-lg;
-// }
-
-// .btn-primary-sm-default {
-//   @extend .btn-primary-lg-default;
-//   @extend .body-text-sm;
-//   padding: $btn-padding-sm;
-// }

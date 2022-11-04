@@ -1,7 +1,20 @@
-export const Card = () => {
+import { Link } from "react-router-dom";
+
+export const Card = ({ singleProject }) => {
+  console.log(`${singleProject.id}`)
   return (
-  <div className="card-container">
-    <img  className="card-img" src="https://firebasestorage.googleapis.com/v0/b/tamaga-website.appspot.com/o/projects%2Fgor-1.jpg?alt=media&token=5ec175c6-599a-4368-a0a9-edb82df975e5" alt="xxx" />
+    <div className="card-container">
+      <Link to={`/projects/${singleProject.id}`}>
+        <div className="card-overlay">
+          <h4 className="H04">{singleProject.title}</h4>
+          <h7 className="H07">{singleProject.category}</h7>
+        </div>
+        <img
+          className="card-img"
+          src={singleProject.imgCover}
+          alt={singleProject.title}
+        />
+      </Link>
     </div>
-  )
+  );
 };

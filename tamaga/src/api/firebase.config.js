@@ -1,4 +1,4 @@
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyBMI2HU601lwI8V_VV6al9zIxFY3y9bgw8",
   authDomain: "tamaga-website.firebaseapp.com",
   projectId: "tamaga-website",

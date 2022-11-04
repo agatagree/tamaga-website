@@ -30,10 +30,15 @@ body {
 }
 
 .H04 {
-  font-weight: $font-weights700;
+  font-weight: $font-weights400;
   font-size: $font-size36;
   line-height: $font-lh125;
   letter-spacing: $font-ls-4;
+
+  &--bold {
+    @extend .H04;
+    font-weight: $font-weights700;
+  }
 }
 
 .H05 {
@@ -56,7 +61,7 @@ body {
   line-height: $font-lh120;
 
   &--bold {
-    @extend .H01;
+    @extend .H07;
     font-weight: $font-weights700;
   }
 }
@@ -81,4 +86,9 @@ body {
   font-weight: $font-weights400;
   font-size: $font-size14;
   line-height: $font-lh140;
+
+  &--bold {
+    @extend .body-text-sm;
+    font-weight: $font-weights700;
+  }
 }

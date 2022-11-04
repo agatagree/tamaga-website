@@ -1,0 +1,17 @@
+.footer-layout {
+  background-color: $grey100;
+  padding: $spacing40;
+  display: flex;
+  justify-content: space-between;
+  margin-top: $spacing180;
+}
+
+.footer-info {
+  gap: $spacing30;
+  display: flex;
+}
+
+.footer-media {
+  display: flex;
+  gap: 20px;
+}

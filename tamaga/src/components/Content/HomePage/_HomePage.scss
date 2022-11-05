@@ -76,28 +76,6 @@
   grid-column: col-start 1/ span 12;
 }
 
-.projects-slider {
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  padding-bottom: $spacing20;
-
-  ::-webkit-scrollbar {
-    height: 5px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: $grey300; 
-    border-radius: 2.5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    border-radius: 2.5px;
-  }
-}
-
 .main-press {
   grid-column: col-start 2/ span 10;
   padding: $spacing180 0 $spacing40 0;

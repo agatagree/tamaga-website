@@ -1,11 +1,20 @@
 .card-container {
   background-color: $grey100;
-  aspect-ratio: 4/3;
+  min-width: 400px;
   height: 300px;
   border-radius: 2px;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
+  scroll-snap-align: center;
+  border-right: 15px solid white;
+}
+
+.card-container:first-of-type {
+  scroll-snap-align: start;
+}
+.card-container:last-of-type {
+  scroll-snap-align: end;
 }
 
 .card-img {

@@ -11,12 +11,22 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text-sm--bold, .bod
 
 .card-container {
   background-color: #E5E5E7;
-  aspect-ratio: 4/3;
+  min-width: 400px;
   height: 300px;
   border-radius: 2px;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
+  scroll-snap-align: center;
+  border-right: 15px solid white;
+}
+
+.card-container:first-of-type {
+  scroll-snap-align: start;
+}
+
+.card-container:last-of-type {
+  scroll-snap-align: end;
 }
 
 .card-img {
@@ -220,6 +230,46 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text-sm--bold, .bod
   flex: 1;
 }
 
+.horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container-inner {
+  display: flex;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 30px;
+  width: 100%;
+}
+.carousel-container-inner::-webkit-scrollbar {
+  display: none;
+}
+.carousel-container-inner > * {
+  scroll-snap-align: center;
+  gap: 30px;
+}
+
+.btn-carousel {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  z-index: 1;
+  transition: transform 0.1s ease-in-out;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 0.5rem;
+}
+
 .nav-hidden {
   display: flex;
   padding: 20px 40px;
@@ -338,14 +388,16 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text-sm--bold, .bod
 }
 
 .projects-slider {
+  background-color: lightblue;
   display: flex;
   gap: 30px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
   -ms-scroll-snap-points-x: repeat(300px);
       scroll-snap-points-x: repeat(300px);
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
   padding-bottom: 20px;
 }
 .projects-slider ::-webkit-scrollbar {
@@ -358,6 +410,11 @@ body, .body-text-sm, .link14, .btn-primary-sm-default, .body-text-sm--bold, .bod
 .projects-slider ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 2.5px;
+}
+
+.gallery-container {
+  grid-column: col-start 1/span 12;
+  width: 100%;
 }
 
 .main-press {

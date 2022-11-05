@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Slider } from "./Slider";
+import { SliderGallery } from "./Slider";
 
 export const Offer = () => {
   return (
@@ -12,11 +13,8 @@ export const Offer = () => {
         user focused way.
       </h3>
       <div className="slider-wrapper">
-        <div className="projects-slider">
-          <Slider />
-        </div>
+        <SliderGallery />
       </div>
-      {/* <div className="section-wrapper main-press"> */}
       <h4 className="H04--bold main-press">Read about us</h4>
       <div className="main-press-text">
         <h6 className="H06">Land art of the 21st century. Fly Ranch</h6>

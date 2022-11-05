@@ -15,6 +15,10 @@
 //4-LAYOUT
 @import "../Styles/scss/4-layout/_layout.scss";
 
+//5-MODULES
+@import "../components//Content/HomePage/Slider/_Slider";
+
+
 //6-PAGES
 @import "../components/NavBar/_NavBar";
 @import "../components/Footer/_Footer";

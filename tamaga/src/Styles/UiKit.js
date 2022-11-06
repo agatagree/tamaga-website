@@ -70,6 +70,36 @@ export const UiKit = () => {
           </NavLink>
         </div>
       </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          marginBottom: "40px",
+        }}
+      >
+        <h2 style={{ margin: "10px" }}>Grid</h2>
+        <div>
+      
+          <div className="container">
+            <div className="row gap-2">
+              <div className="col-12-xs col-6-md col-3-xl" >
+              <div style={{border:"1px solid red"}}>responsive</div>
+              </div>
+              <div className="col-12-xs col-6-md col-3-lg" >
+              <div style={{border:"1px solid red"}}>responsive</div>
+              </div>
+              <div className="col-12-xs col-6-md col-3-xl">
+              <div style={{border:"1px solid red"}}>responsive</div>
+              </div>
+              <div className="col-6-xs col-6-md col-3-xl">
+              <div style={{border:"1px solid red"}}>responsive</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </>
   );
 };

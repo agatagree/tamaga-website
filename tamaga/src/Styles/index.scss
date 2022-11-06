@@ -3,6 +3,7 @@
 @import "../Styles/scss/1-helpers/_base.scss";
 @import "../Styles/scss/1-helpers/_font.scss";
 @import "../Styles/scss/1-helpers/_variables.scss";
+@import "../Styles//scss/1-helpers/_breakpoints.scss";
 
 //2-UTILS COMPONENTS
 @import "../utils/Card/_Card.scss";
@@ -16,11 +17,10 @@
 @import "../Styles/scss/4-layout/_layout.scss";
 
 //5-MODULES
-@import "../components//Content/HomePage/Slider/_Slider";
 
 
 //6-PAGES
 @import "../components/NavBar/_NavBar";
 @import "../components/Footer/_Footer";
 @import "../components/Content/HomePage/_HomePage";
-@import "../utils/Messages/messages";
+@import "../utils/Messages/_messages";

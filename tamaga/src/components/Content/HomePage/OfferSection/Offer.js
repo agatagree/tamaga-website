@@ -4,7 +4,7 @@ import { SliderGallery } from "./Slider";
 
 export const Offer = () => {
   return (
-    <div className="main-content">
+    <div className="content-grid-margin40">
       <h3 className="H03 section-wrapper">
         <span className="H03--bold">tamaga</span> studio is interdisciplinary
         design office based in Poland. We deal with diffrent scales of

@@ -1,14 +1,14 @@
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { Card } from "../../../utils/Card/Card";
+import { Card } from "../../../../utils/Card/Card";
 import { onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { getDataFromSnapshot } from "../../../api/firebaseGetData";
-import { projectsCollection } from "../../../api/firebaseIndex";
+import { getDataFromSnapshot } from "../../../../api/firebaseGetData";
+import { projectsCollection } from "../../../../api/firebaseIndex";
 
 const responsive = {
   0: { items: 1 },
-  568: { items: 2 },
+  768: { items: 2 },
   1280: { items: 3 },
   1600: { items: 4 },
 };

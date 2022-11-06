@@ -15,6 +15,10 @@ body {
     @extend .H01;
     font-weight: $font-weights700;
   }
+
+  @include sm {
+    font-size: $font-size36;
+  }
 }
 
 .H03 {
@@ -26,6 +30,10 @@ body {
   &--bold {
     @extend .H03;
     font-weight: $font-weights700;
+  }
+
+  @include sm {
+    font-size: $font-size30;
   }
 }
 
@@ -39,6 +47,10 @@ body {
     @extend .H04;
     font-weight: $font-weights700;
   }
+
+  @include sm {
+    font-size: $font-size24;
+  }
 }
 
 .H05 {
@@ -46,6 +58,10 @@ body {
   font-size: $font-size30;
   line-height: $font-lh125;
   letter-spacing: $font-ls2;
+
+  @include sm {
+    font-size: $font-size18;
+  }
 }
 
 .H06 {
@@ -53,6 +69,10 @@ body {
   font-size: $font-size24;
   line-height: $font-lh125;
   letter-spacing: $font-ls-4;
+
+  @include sm {
+    font-size: $font-size16;
+  }
 }
 
 .H07 {

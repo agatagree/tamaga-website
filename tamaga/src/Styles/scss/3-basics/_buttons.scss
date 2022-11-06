@@ -50,15 +50,25 @@ $btn-color-disabled: $dark-grey200;
   }
 }
 
+
+.btn-primary-sm-default {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .body-text-sm;
+  padding: $btn-padding-sm;
+}
+
 .btn-primary-lg-default {
   @extend .btn;
   @extend .btn-primary;
   @extend .body-text;
   padding: $btn-padding-lg;
+
+
+ @include sm {
+  padding: $btn-padding-sm;
+  font-size: $font-size14;
+ }
 }
 
-.btn-primary-sm-default {
-  @extend .btn-primary-lg-default;
-  @extend .body-text-sm;
-  padding: $btn-padding-sm;
-}
+

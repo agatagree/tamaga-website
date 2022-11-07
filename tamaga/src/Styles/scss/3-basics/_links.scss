@@ -2,7 +2,7 @@
 $link-border-primary: 1px solid $blue500;
 $link-border-hover: 10px solid $yellow500;
 
-.link {
+@mixin link {
   border-bottom: $link-border-primary;
   text-decoration: none;
 
@@ -17,17 +17,17 @@ $link-border-hover: 10px solid $yellow500;
 }
 
 .link14 {
-  @extend .link;
-  @extend .body-text-sm;
+  @include link();
+  @include body-text-sm();
 }
 
 .link16 {
-  @extend .link;
-  @extend .body-text;
+  @include link();
+  @include body-text();
 }
 
 .link18 {
-  @extend .link;
+  @include link();
   @extend .H07;
   border: none;
 }
@@ -46,7 +46,7 @@ $link-border-hover: 10px solid $yellow500;
 }
 
 .link24 {
-  @extend .link;
+  @include link();
   @extend .H06;
   &:hover{
     background-position: 0 90%;
@@ -54,7 +54,7 @@ $link-border-hover: 10px solid $yellow500;
 }
 
 .link24-t {
-  @extend .link;
+  @include link();
   @extend .H04;
   border: none;
   &:hover{
@@ -63,7 +63,7 @@ $link-border-hover: 10px solid $yellow500;
 }
 
 .link48-t {
-  @extend .link;
+  @include link();
   @extend .H03;
   border: none;
   &:hover{

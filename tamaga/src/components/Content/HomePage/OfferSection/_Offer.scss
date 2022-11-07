@@ -2,12 +2,13 @@
   padding: $spacing180 0;
   grid-column: col-start 2/ span 10;
 
-  @media (max-width: $sm) {
-    padding: $spacing120 0;
-   }
-   @media (max-width: $lg) {
+  @include sm {
+    padding: $spacing40 0;
     grid-column: col-start 1/ span 12;
-   }
+  }
+  @include lg {
+    padding: $spacing40 0;
+  }
 }
 
 .slider-wrapper {
@@ -18,19 +19,23 @@
   grid-column: col-start 2/ span 10;
   padding: $spacing150 0 $spacing40 0;
 
-  @media (max-width: $md) {
+  @include md {
     grid-column: col-start 1/ span 12;
     padding: $spacing80 0 $spacing40 0;
-   }
+  }
 }
 
 .main-press-text {
   grid-column: col-start 2/ span 4;
 
-  @media (max-width: $md) {
+  @include lg {
+    grid-column: col-start 2/ span 10;
+    margin-bottom: $spacing40;
+  }
+  @include md {
     grid-column: col-start 1/ span 12;
     margin-bottom: $spacing40;
-   }
+  }
 }
 
 .main-press-description {
@@ -43,9 +48,9 @@
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
 
-  @media (max-width: $md) {
+  @include md {
     margin: $spacing20 0 $spacing20 0;
-   }
+  }
 }
 
 .press-read-more {
@@ -55,13 +60,20 @@
 .main-press-image {
   grid-column: col-start 7/ span 5;
   aspect-ratio: 4/3;
-  max-height: 390px;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
 
-  @media (max-width: $md) {
+  @include lg {
+    grid-column: col-start 2/ span 10;
+    max-height: auto;
+    width:100%;
+  }
+  @include md {
     grid-column: col-start 1/ span 12;
     max-height: auto;
     width:100%;
-   }
+  }
 }
 
 .main-press-img {

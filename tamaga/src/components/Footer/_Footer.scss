@@ -5,6 +5,9 @@
   justify-content: space-between;
   margin-top: $spacing180;
   flex-direction: row;
+  @include lg {
+    padding: $spacing24;
+  }
   @media (max-width: $lg) {
     flex-direction: column-reverse;
     justify-content: center;
@@ -18,7 +21,7 @@
   gap: $spacing30;
   display: flex;
   flex-direction: row;
-  @media (max-width: $md) {
+  @include md {
     flex-direction: column;
     align-items: center;
     gap: $spacing10;

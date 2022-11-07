@@ -13,7 +13,7 @@ export const Offer = () => {
         user focused way.
       </h3>
       <div className="slider-wrapper">
-        <SliderGallery />
+        {/* <SliderGallery /> */}
       </div>
       <h4 className="H04--bold main-press">Read about us</h4>
       <div className="main-press-text">

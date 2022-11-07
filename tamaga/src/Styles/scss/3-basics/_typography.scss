@@ -33,7 +33,7 @@ body {
   }
 
   @include sm {
-    font-size: $font-size30;
+    font-size: $font-size24;
   }
 }
 
@@ -94,21 +94,34 @@ body {
 
 
 //Body
-.body-text {
-  @extend body;
+@mixin text {
+  letter-spacing: 0;
+  color: $blue500;
+  font-family: 'Montserrat', sans-serif;
   font-weight: $font-weights400;
-  font-size: $font-size16;
   line-height: $font-lh140;
 }
 
-.body-text-sm {
-  @extend body;
-  font-weight: $font-weights400;
+@mixin body-text {
+  @include text();
+  font-size: $font-size16;
+}
+
+@mixin body-text-sm {
+  @include text();
   font-size: $font-size14;
-  line-height: $font-lh140;
+}
+
+
+.body-text {
+  @include body-text();
+}
+
+.body-text-sm {
+  @include body-text-sm();
 
   &--bold {
-    @extend .body-text-sm;
+    @include body-text-sm();
     font-weight: $font-weights700;
   }
 }

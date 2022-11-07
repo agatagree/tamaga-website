@@ -19,16 +19,13 @@ $btn-color-hover: $grey100;
 $btn-color-active: $grey100;
 $btn-color-disabled: $dark-grey200;
 
-.btn {
+//primary
+@mixin btn() {
   box-sizing: border-box;
   text-decoration: none;
   cursor: pointer;
   display: block;
   width: fit-content;
-}
-
-//primary
-.btn-primary {
   border: $btn-border-primary-default;
   border-radius: $btn-radius-primary;
   background-color: $btn-bg-default;
@@ -52,16 +49,14 @@ $btn-color-disabled: $dark-grey200;
 
 
 .btn-primary-sm-default {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .body-text-sm;
+  @include btn();
+  @include body-text-sm();
   padding: $btn-padding-sm;
 }
 
 .btn-primary-lg-default {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .body-text;
+  @include btn();
+  @include body-text();
   padding: $btn-padding-lg;
 
 

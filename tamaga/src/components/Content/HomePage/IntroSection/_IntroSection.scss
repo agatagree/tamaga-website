@@ -1,8 +1,8 @@
 .intro-wrapper {
   display: flex;
   height: 100vh;
-  min-width: 280px;
-  @media (max-width: $md) {
+  width: 100%;
+  @include lg {
     flex-direction: column;
   }
 }
@@ -24,11 +24,7 @@
   background-position: center;
   background-size: cover;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/tamaga-website.appspot.com/o/projects%2Fkra-1.jpg?alt=media&token=dfec6744-7b83-4014-ab33-612acda900a4");
-  @media (max-width: $md) {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
+  background-color: $grey100;
 }
 
 .intro-content-layout {
@@ -52,8 +48,9 @@
   padding:  0 $spacing40;
   gap: $spacing80;
 
-  @include xs {
+  @include sm {
     gap: $spacing40;
+    padding:  0 $spacing24;
    }
 }
 

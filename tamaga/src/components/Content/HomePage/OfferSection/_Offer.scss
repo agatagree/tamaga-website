@@ -1,27 +1,29 @@
 .section-wrapper {
-  padding: $spacing180 0;
+  margin: $spacing180 0;
   grid-column: col-start 2/ span 10;
 
-  @include sm {
-    padding: $spacing40 0;
+  @include md {
     grid-column: col-start 1/ span 12;
   }
   @include lg {
-    padding: $spacing40 0;
+    margin: $spacing120 0;
   }
 }
 
 .slider-wrapper {
-  grid-column: col-start 1/ span 12;
+  grid-column: col-start 2/ span 10;
+  @include md {
+    grid-column: col-start 1/ span 12;
+  }
 }
 
 .main-press {
   grid-column: col-start 2/ span 10;
-  padding: $spacing150 0 $spacing40 0;
+  margin: $spacing120 0 $spacing40 0;
 
   @include md {
     grid-column: col-start 1/ span 12;
-    padding: $spacing80 0 $spacing40 0;
+    margin: $spacing80 0 $spacing40 0;
   }
 }
 

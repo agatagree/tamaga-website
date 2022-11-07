@@ -252,6 +252,7 @@ body {
 .link14 {
   border-bottom: 1px solid #012B55;
   text-decoration: none;
+  display: inline-block;
   letter-spacing: 0;
   color: #012B55;
   font-family: "Montserrat", sans-serif;
@@ -271,6 +272,7 @@ body {
 .link16 {
   border-bottom: 1px solid #012B55;
   text-decoration: none;
+  display: inline-block;
   letter-spacing: 0;
   color: #012B55;
   font-family: "Montserrat", sans-serif;
@@ -290,6 +292,7 @@ body {
 .link18, .link18-logo {
   border-bottom: 1px solid #012B55;
   text-decoration: none;
+  display: inline-block;
   border: none;
 }
 .link18:hover, .link18-logo:hover {
@@ -312,6 +315,7 @@ body {
 .link24 {
   border-bottom: 1px solid #012B55;
   text-decoration: none;
+  display: inline-block;
 }
 .link24:hover {
   background-image: linear-gradient(120deg, #D3AB42 0%, #D3AB42 100%);
@@ -328,6 +332,7 @@ body {
 .link24-t {
   border-bottom: 1px solid #012B55;
   text-decoration: none;
+  display: inline-block;
   border: none;
 }
 .link24-t:hover {
@@ -345,6 +350,7 @@ body {
 .link48-t {
   border-bottom: 1px solid #012B55;
   text-decoration: none;
+  display: inline-block;
   border: none;
 }
 .link48-t:hover {
@@ -388,21 +394,115 @@ body {
   }
 }
 
+.burger-wrapper {
+  display: none;
+}
+@media (max-width: 576px) {
+  .burger-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.25s;
+  }
+  .burger-wrapper:hover .line {
+    background: #8DA4BB;
+  }
+  .burger-wrapper.active .top {
+    transform: rotate(45deg);
+  }
+  .burger-wrapper.active .middle {
+    transform: scaleY(0);
+  }
+  .burger-wrapper.active .bottom {
+    transform: rotate(-45deg);
+  }
+}
+
+.burger-content {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.burger-content div {
+  width: 16px;
+  height: 2px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #012B55;
+  transform-origin: 1px;
+}
+.burger-content div .top {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+  transition: all 1s;
+}
+.burger-content div .middle {
+  transition: transform 0.2s ease-in-out;
+}
+.burger-content div .bottom {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
 .nav-hidden {
   display: flex;
   padding: 20px 40px;
   justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .nav-hidden {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 24px;
+  }
 }
 
 .nav-full {
   display: flex;
+  width: 100%;
   padding: 20px 40px;
   justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .nav-full {
+    padding: 20px 24px;
+  }
 }
 
 .nav-links {
   display: flex;
   gap: 40px;
+}
+@media (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.nav-links-toggle {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  height: calc(50vh - 70px);
+  padding: 24px;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
 }
 
 .footer-layout {
@@ -458,7 +558,7 @@ body {
 }
 @media (max-width: 992px) {
   .intro-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -517,33 +617,37 @@ body {
 }
 
 .section-wrapper {
-  padding: 180px 0;
+  margin: 180px 0;
   grid-column: col-start 2/span 10;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section-wrapper {
-    padding: 40px 0;
     grid-column: col-start 1/span 12;
   }
 }
 @media (max-width: 992px) {
   .section-wrapper {
-    padding: 40px 0;
+    margin: 120px 0;
   }
 }
 
 .slider-wrapper {
-  grid-column: col-start 1/span 12;
+  grid-column: col-start 2/span 10;
+}
+@media (max-width: 768px) {
+  .slider-wrapper {
+    grid-column: col-start 1/span 12;
+  }
 }
 
 .main-press {
   grid-column: col-start 2/span 10;
-  padding: 150px 0 40px 0;
+  margin: 120px 0 40px 0;
 }
 @media (max-width: 768px) {
   .main-press {
     grid-column: col-start 1/span 12;
-    padding: 80px 0 40px 0;
+    margin: 80px 0 40px 0;
   }
 }
 

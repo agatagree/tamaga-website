@@ -5,6 +5,7 @@ $link-border-hover: 10px solid $yellow500;
 @mixin link {
   border-bottom: $link-border-primary;
   text-decoration: none;
+  display: inline-block;
 
   &:hover{
     background-image: linear-gradient(120deg, $yellow500 0%, $yellow500 100%);

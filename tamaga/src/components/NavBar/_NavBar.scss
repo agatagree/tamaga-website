@@ -1,16 +1,50 @@
+@import "./BurgerMenu/_BurgerMenu";
+
 .nav-hidden {
   display: flex;
   padding: $spacing20 $spacing40;
   justify-content: flex-end;
+  position: relative;
+  width: 100%;
+
+  @include sm {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: $spacing20 $spacing24;
+  }
 }
 
 .nav-full {
   display: flex;
+  width: 100%;
   padding: $spacing20 $spacing40;
   justify-content: space-between;
+  @include sm {
+    padding: $spacing20 $spacing24;
+  }
 }
 
 .nav-links {
   display: flex;
   gap: $spacing40;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.nav-links-toggle {
+  display: flex;
+  gap: $spacing40;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  height: calc(50vh - 70px);
+  padding: $spacing24;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
 }

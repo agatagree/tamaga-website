@@ -1,5 +1,6 @@
 # tamaga-website
 
+=======
 **Website for architecture studio.**  ***Work in progress 🏗***
 
 
@@ -23,4 +24,3 @@
 * And design system for the website, used also is CSS:
 
 <img src="https://user-images.githubusercontent.com/98839155/200056015-75044376-d5e9-4af9-bd2f-bb640681a0dc.JPG" width="200" >
-

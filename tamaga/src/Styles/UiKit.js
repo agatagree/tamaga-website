@@ -3,6 +3,39 @@ import { NavLink } from "react-router-dom";
 export const UiKit = () => {
   return (
     <>
+          <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          marginBottom: "40px",
+        }}
+      >
+        <h2 style={{ margin: "10px" }}>Text</h2>
+        <div>
+          <h4 style={{ margin: "10px" }}>Body text</h4>
+          <p
+            style={{ display: "inline-block", margin: "10px" }}
+            className="body-text"
+          >
+            A spiral and colourful earth wall surrounds a secret orchard, leading to a centralwater and energy collector. Source is a contemporary desert hortus conclusus where low-tech knowledge mixes with modern technology and ancients art.
+          </p>
+          <h4 style={{ margin: "10px" }}>Body text small</h4>
+          <p
+            style={{ display: "inline-block", margin: "10px" }}
+            className="body-text-sm"
+          >
+            A spiral and colourful earth wall surrounds a secret orchard, leading to a centralwater and energy collector. Source is a contemporary desert hortus conclusus where low-tech knowledge mixes with modern technology and ancients art.
+          </p>
+          <h4 style={{ margin: "10px" }}>Body text small bold</h4>
+          <p
+            style={{ display: "inline-block", margin: "10px" }}
+            className="body-text-sm--bold"
+          >
+            A spiral and colourful earth wall surrounds a secret orchard, leading to a centralwater and energy collector. Source is a contemporary desert hortus conclusus where low-tech knowledge mixes with modern technology and ancients art.
+          </p>
+        </div>
+      </div>
+
       <div
         style={{
           display: "flex",

@@ -112,6 +112,10 @@ body {
   font-size: $font-size14;
 }
 
+@mixin body-text-xs {
+  @include text();
+  font-size: $font-size12;
+}
 
 .body-text {
   @include body-text();
@@ -124,4 +128,8 @@ body {
     @include body-text-sm();
     font-weight: $font-weights700;
   }
+}
+
+.body-text-xs {
+  @include body-text-xs();
 }

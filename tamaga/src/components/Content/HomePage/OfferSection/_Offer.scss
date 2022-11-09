@@ -11,8 +11,8 @@
 }
 
 .slider-wrapper {
-  grid-column: col-start 2/ span 10;
-  @include md {
+  grid-column: col-start 1/ span 12;
+  @include sm {
     grid-column: col-start 1/ span 12;
   }
 }
@@ -83,5 +83,6 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 

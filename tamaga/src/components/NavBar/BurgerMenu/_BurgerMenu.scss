@@ -20,6 +20,9 @@
   }
 
     &.active {
+      .burger-content {
+        transform: translate(3px);
+      }
       .top{
         transform: rotate(45deg);
       }

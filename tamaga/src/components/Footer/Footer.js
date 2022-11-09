@@ -1,6 +1,6 @@
 import { FacebookIcon } from "../../utils/Icons/Facebook";
 import { InstagramIcon } from "../../utils/Icons/Instagram";
-import { Contact } from "./ContactForm/ContactForm";
+import { Contact } from "./ContactSection/Contact"
 
 export const Footer = () => {
   return (

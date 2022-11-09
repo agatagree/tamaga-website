@@ -614,11 +614,21 @@ body {
   padding: 14px 16px 15px 14px;
   border-radius: 4px;
   border: 1px solid #A9AAAE;
-  margin-top: 8px;
+  margin: 8px 0;
 }
 
 .form-button {
   width: 100%;
+}
+
+.input-error {
+  letter-spacing: 0;
+  color: #012B55;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  font-size: 12px;
+  color: #DA4040;
 }
 
 .footer-layout {

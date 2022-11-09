@@ -15,7 +15,7 @@
 
 .content-grid-margin40 {
   display: grid;
-  max-width: 1920px;
+  max-width: 1440px;
   grid-template-columns: repeat(12,[col-start] 1fr);
   column-gap: $spacing20;
   margin: 0 $spacing40;

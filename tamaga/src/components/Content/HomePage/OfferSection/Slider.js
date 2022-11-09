@@ -5,12 +5,12 @@ import { onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { getDataFromSnapshot } from "../../../../api/firebaseGetData";
 import { projectsCollection } from "../../../../api/firebaseIndex";
+import { Loader } from "../../../../utils/Loader.js/Loader";
 
 const responsive = {
   0: { items: 1 },
   768: { items: 2 },
   1280: { items: 3 },
-  1600: { items: 4 },
 };
 
 export const SliderGallery = () => {
@@ -25,7 +25,7 @@ export const SliderGallery = () => {
   }, [load]);
 
   if (load === false) {
-    return <p>loading...</p>;
+    return <Loader />;
   }
 
   return (
@@ -41,7 +41,7 @@ export const SliderGallery = () => {
             <Card key={singleProject.id} singleProject={singleProject} />
           ))
         ) : (
-          <p>loading...</p>
+          <Loader />
         )}
       </AliceCarousel>
     </>

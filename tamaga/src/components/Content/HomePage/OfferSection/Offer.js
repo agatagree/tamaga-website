@@ -1,3 +1,4 @@
+import { Loader } from "../../../../utils/Loader.js/Loader";
 import { SliderGallery } from "./Slider";
 
 export const Offer = () => {

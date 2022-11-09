@@ -18,13 +18,13 @@ export const NavBar = ({ logoHidden }) => {
       )}
       <BurgerMenu open={open} setOpen={setOpen} />
       <div className={open ? "nav-links" : "nav-links-toggle"}>
-        <NavLink className="link18" onClick={toggle} to="/projects">
+        <NavLink className={open ? "link18" : "link24-t"} onClick={toggle} to="/projects">
           projects
         </NavLink>
-        <NavLink className="link18" to="/about" onClick={toggle}>
+        <NavLink className={open ? "link18" : "link24-t"} to="/about" onClick={toggle}>
           about
         </NavLink>
-        <NavLink className="link18" to="/contact" onClick={toggle}>
+        <NavLink className={open ? "link18" : "link24-t"} to="/contact" onClick={toggle}>
           contact
         </NavLink>
       </div>

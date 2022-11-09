@@ -1,19 +1,25 @@
+@import "./ContactForm/ContactForm";
+
 .footer-layout {
   background-color: $grey100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 1440px;
   padding: $spacing40;
   display: flex;
   justify-content: space-between;
-  margin-top: $spacing180;
   flex-direction: row;
   @include lg {
     padding: $spacing24;
-  }
-  @media (max-width: $lg) {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: $spacing30;
-    margin-top: $spacing120;
   }
 }
 
@@ -31,7 +37,7 @@
 .footer-media {
   display: flex;
   gap: $spacing20;
-  @media (max-width: $md) {
+  @include md {
     padding-top: 4px;
   }
 }

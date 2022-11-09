@@ -13,14 +13,18 @@
   width: 100%;
 }
 
-.content-grid-margin40 {
+@mixin content-grid {
   display: grid;
   max-width: 1440px;
   grid-template-columns: repeat(12,[col-start] 1fr);
   column-gap: $spacing20;
-  margin: 0 $spacing40;
+}
 
+.content-grid-margin40 {
+  @include content-grid();
+  margin: 0 $spacing40 $spacing180 $spacing40 ;
   @include lg {
-    margin: 0 $spacing24;
+    margin: 0 $spacing24 $spacing180 $spacing24;
    }
 }
+

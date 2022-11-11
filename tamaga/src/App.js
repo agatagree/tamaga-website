@@ -1,5 +1,4 @@
 import { Footer } from "./components/Footer/Footer";
-import { NavBar } from "./components/NavBar/NavBar";
 import { Content } from "./components/Content/Content";
 import { BrowserRouter } from "react-router-dom";
 import { UiKit } from "./Styles/UiKit";
@@ -10,6 +9,7 @@ import { About } from "./components/Content/About/About";
 import { Contact } from "./components/Content/Contact/Contact";
 import { SingleProject } from "./components/Content/SingleProject/SingleProject";
 import { WrongWebsite } from "./utils/Messages/WrongWebsite";
+import { useState} from "react";
 
 function App() {
   return (

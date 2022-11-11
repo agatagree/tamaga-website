@@ -37,7 +37,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form className="contact-form" ref={form} onSubmit={onSubmit}>
+    <form className="contact-spacing" ref={form} onSubmit={onSubmit}>
       <div className="form-section">
         <label className="body-text-xs">Name</label>
         <input

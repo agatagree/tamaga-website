@@ -1,16 +1,13 @@
-export const BurgerMenu = ({open, setOpen}) => {
-
-  const toggle  = () => {
-    setOpen(!open);
-  }
-
+export const BurgerMenu = ({toggle, setToggle}) => {
   return (
-    <button className={(open) ? "burger-wrapper" : "burger-wrapper active"} onClick={toggle}>
+    <>
+    <button className={(toggle) ? "burger-wrapper" : "burger-wrapper active"} onClick={() => setToggle(!toggle)}>
       <div className="burger-content">
         <div className="line top"/>
         <div className="line middle"/>
         <div className="line bottom"/>
       </div>
     </button>
+    </>
   )
 }

@@ -5,16 +5,12 @@
   justify-content: center;
 }
 
-.contact-wrapper {
-  @include content-grid();
-  margin: 0 $spacing40;
-  width: 100%;
-}
-
 .contact-section {
   grid-column: col-start 1/ span 12;
   @include content-grid();
   grid-auto-flow: dense;
+  margin: 0 $spacing40;
+  width: 100%;
 }
 
 .contact-info {
@@ -41,41 +37,22 @@
   }
 }
 
-.contact-text {
-  margin-bottom: $spacing30;
-}
-
-.main-contact-text {
-  margin-bottom: $spacing120;
-}
-
-.contact-form{
-  grid-column: col-start 2/ span 5;
-  display: flex;
+.contact-spacing {
+  display:  flex;
   flex-direction: column;
-  margin-bottom: $spacing120;
-
-  @include lg {
-    grid-column: col-start 2/ span 10;
-    width:100%;
-  }
-  @include md {
-    grid-column: col-start 1/ span 12;
-    width:100%;
-  }
+  gap: $spacing30;
 }
 
 .form-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: $spacing30;
 }
 
 .input-form {
   padding: 14px 16px 15px 14px;
   border-radius: 4px;
   border: 1px solid $grey500;
-  margin: 8px 0;
+  margin: 8px 0 0 0;
 }
 
 .form-button {

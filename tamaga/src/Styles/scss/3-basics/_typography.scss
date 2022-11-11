@@ -59,6 +59,14 @@ body {
   line-height: $font-lh125;
   letter-spacing: $font-ls2;
 
+  &--bold {
+    @extend .H04;
+    font-weight: $font-weights700;
+    @include sm {
+      font-size: $font-size18;
+    }
+  }
+
   @include sm {
     font-size: $font-size18;
   }

@@ -17,15 +17,20 @@
   display: grid;
   max-width: 1440px;
   grid-template-columns: repeat(12,[col-start] 1fr);
-  column-gap: $spacing20;
+  gap: $spacing20;
 }
 
 .content-grid-margin40 {
   @include content-grid();
   margin: 0 $spacing40 ;
-  @include lg {
+  @include sm {
     margin: 0 $spacing24;
-   }
+  }
+}
+
+.content-grid-margin24 {
+  @include content-grid();
+  margin: $spacing180 $spacing24 ;
 }
 
 ///layout half half:
@@ -94,5 +99,4 @@
     margin: $spacing20 0 $spacing20 0;
   }
 }
-
 

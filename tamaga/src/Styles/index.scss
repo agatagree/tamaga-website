@@ -7,6 +7,7 @@
 
 //2-UTILS COMPONENTS
 @import "../utils/Card/_Card.scss";
+@import "../utils/ImgCard/_ImgCard.scss";
 
 //3-BASICS
 @import "../Styles/scss/3-basics/_typography.scss";
@@ -25,3 +26,4 @@
 @import "../components/Content/HomePage/_HomePage.scss";
 @import "../utils/Messages/_messages.scss";
 @import "../utils/Loader.js/_Loader.scss";
+@import "../components/Content/ProjectsList/ProjectList";

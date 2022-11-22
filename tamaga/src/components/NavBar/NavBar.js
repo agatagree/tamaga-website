@@ -30,29 +30,53 @@ export const NavBar = ({ logoHidden }) => {
         <BurgerMenu toggle={toggle} setToggle={setToggle} />
       </div>
 
-      <div className={toggle ? "nav-links" : "nav-links-toggle"}>
+
+      <div className="nav-links">
         <NavLink
-          className={toggle ? "link18" : "link24-t"}
+          className="link18"
+          to="/projects"
+        >
+          projects
+        </NavLink>
+        <NavLink
+          className="link18"
+          to="/about"
+        >
+          about
+        </NavLink>
+        <NavLink
+          className="link18"
+          to="/contact"
+        >
+          contact
+        </NavLink>
+      </div>
+
+      <div className={toggle ? "hidden" :"nav-links-toggle"}>
+        <NavLink
+          className="link24-t"
           onClick={handleToggle}
           to="/projects"
         >
           projects
         </NavLink>
         <NavLink
-          className={toggle ? "link18" : "link24-t"}
+          className="link24-t"
           to="/about"
           onClick={handleToggle}
         >
           about
         </NavLink>
         <NavLink
-          className={toggle ? "link18" : "link24-t"}
+          className="link24-t"
           to="/contact"
           onClick={handleToggle}
         >
           contact
         </NavLink>
       </div>
+
+
 
       <div className={toggle ? "hidden" : "nav-contact"}>
         <p className="H05--bold">Get in touch</p>

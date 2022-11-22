@@ -1,4 +1,4 @@
-import { collection, doc, orderBy } from "firebase/firestore";
+import { collection } from "firebase/firestore";
 import { db } from "./firebase";
 
 export const collectionProjects = "projects";

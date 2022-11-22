@@ -1,13 +1,14 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
-import { ErrorMessage } from "@hookform/error-message";
+import { SingleMessage } from "../../../utils/Messages/SingleMessage/SingleMessage";
 
 export const ContactForm = () => {
   const form = useRef();
+  const [state, setState] = useState(null);
+
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm({
     mode: "all",
@@ -25,19 +26,18 @@ export const ContactForm = () => {
       )
       .then(
         () => {
-          alert(
-            "Thank you for your messege. We will response as soon as possible."
-          );
           e.target.reset();
+          setState("success");
         },
         (error) => {
-          alert(error.text);
+          setState("error");
+          console.log(error.text);
         }
       );
   };
 
   return (
-    <form className="contact-form" ref={form} onSubmit={onSubmit}>
+    <form className="contact-spacing" ref={form} onSubmit={onSubmit}>
       <div className="form-section">
         <label className="body-text-xs">Name</label>
         <input
@@ -45,6 +45,7 @@ export const ContactForm = () => {
           type="text"
           name="user_name"
           placeholder="Your Name"
+          onFocus={() => setState(false)}
           aria-invalid={errors.user_name ? "true" : "false"}
           {...register("user_name", {
             required: "Name is required",
@@ -60,6 +61,7 @@ export const ContactForm = () => {
           type="email"
           name="user_email"
           placeholder="Your E-mail"
+          onFocus={() => setState(false)}
           aria-invalid={errors.user_email ? "true" : "false"}
           {...register("user_email", {
             required: "E-mail is reqired",
@@ -79,6 +81,7 @@ export const ContactForm = () => {
           name="message"
           placeholder="Tell us about your project"
           rows="5"
+          onFocus={() => setState(false)}
           aria-invalid={errors.message ? "true" : "false"}
           {...register("message", {
             required: "Fill the form",
@@ -95,6 +98,9 @@ export const ContactForm = () => {
         value="Send"
         className="btn-primary-sm-default form-button"
       />
+      {state &&       
+      <SingleMessage state={state}/>
+      }
     </form>
   );
 };

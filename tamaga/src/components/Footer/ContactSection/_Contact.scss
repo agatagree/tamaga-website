@@ -1,0 +1,65 @@
+.contact-layout {
+  background-color: $grey200;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  grid-column: col-start 1/ span 12;
+  @include content-grid();
+  grid-auto-flow: dense;
+  margin: 0 $spacing40;
+  width: 100%;
+}
+
+.contact-info {
+  grid-column: col-start 8/ span 4;
+  @include lg {
+    grid-column: col-start 2/ span 10;
+    margin-bottom: $spacing40;
+  }
+  @include md {
+    grid-column: col-start 1/ span 12;
+    margin-bottom: $spacing40;
+  }
+}
+
+.contact-title {
+  grid-column: col-start 8/ span 4;
+  margin: $spacing120 0 $spacing40 0;
+  @include lg {
+    grid-column: col-start 2/ span 10;
+  }
+  @include md {
+    grid-column: col-start 1/ span 12;
+    margin: $spacing80 0 $spacing40 0;
+  }
+}
+
+.contact-spacing {
+  display:  flex;
+  flex-direction: column;
+  gap: $spacing30;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
+  padding: 14px 16px 15px 14px;
+  border-radius: 4px;
+  border: 1px solid $grey500;
+  margin: 8px 0 0 0;
+}
+
+.form-button {
+  width: 100%;
+}
+
+.input-error {
+  @include body-text-xs();
+  color: $error;
+}

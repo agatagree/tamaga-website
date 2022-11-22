@@ -1,8 +1,6 @@
 import { Footer } from "./components/Footer/Footer";
-import { NavBar } from "./components/NavBar/NavBar";
 import { Content } from "./components/Content/Content";
 import { BrowserRouter } from "react-router-dom";
-import { UiKit } from "./Styles/UiKit";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./components/Content/HomePage/HomePage";
 import { ProjectsList } from "./components/Content/ProjectsList/ProjectsList";
@@ -15,7 +13,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <UiKit /> */}
         <div className="layout">
           <div className="content">
             <Routes>

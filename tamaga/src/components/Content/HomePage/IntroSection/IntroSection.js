@@ -9,7 +9,7 @@ export const IntroSection = () => {
           <div className="intro-gallery"></div>
         </div>
         <div className="intro-content-layout">
-          <NavBar logoHidden={true}/>
+          <NavBar logoHidden={true} />
           <div className="intro-content-wrapper">
             <div className="intro-content">
               <div className="intro-text">

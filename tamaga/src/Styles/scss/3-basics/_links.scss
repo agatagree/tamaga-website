@@ -6,6 +6,7 @@ $link-border-hover: 10px solid $yellow500;
   border-bottom: $link-border-primary;
   text-decoration: none;
   display: inline-block;
+  width: fit-content;
 
   &:hover{
     background-image: linear-gradient(120deg, $yellow500 0%, $yellow500 100%);

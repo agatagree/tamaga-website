@@ -1,0 +1,113 @@
+.gallery-card {
+  grid-column: col-start 1/ span 6;
+}
+
+.projectList-card-title {
+  padding-top: $spacing20;
+  @include sm {
+    padding-top: $spacing10;
+  }
+}
+
+.gallery{
+  margin-top: $spacing180;
+  margin-bottom: $spacing180;
+  gap: $spacing20;
+
+  @include s {
+    grid-template-rows: repeat(17, 1fr);
+    aspect-ratio: 3 / 4;
+  }
+
+  @include sm {
+    grid-template-rows: none;
+    row-gap: 60px;
+    margin-top: $spacing120;
+    margin-bottom: $spacing120;
+  }
+}
+
+.gallery div:nth-child(n+1) {
+  background-color: $grey100;
+  grid-column: 1 / 7;
+  grid-row: 1 / 5;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.gallery div:nth-child(n+2) {
+  background-color: $grey100;
+  grid-column: 8 / 13;
+  grid-row: 4 / 7;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.gallery div:nth-child(n+3) {
+  background-color: $grey100;
+  grid-column: 1 / 6;
+  grid-row: 6 /9;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.gallery div:nth-child(n+4) {
+  background-color: $grey100;
+  grid-column: 7/ 13;
+  grid-row: 8 /12;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.gallery div:nth-child(n+5) {
+  background-color: $grey100;
+  grid-column: 1 / 6;
+  grid-row: 10 / 13;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.gallery div:nth-child(n+6) {
+  background-color: $grey100;
+  grid-column: 8 / 13;
+  grid-row: 13 / 16;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.gallery div:nth-child(n+7) {
+  background-color: $grey100;
+  grid-column:1 / 7;
+  grid-row: 14 / 18;
+
+  @include md {
+    grid-column: 1/13;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+

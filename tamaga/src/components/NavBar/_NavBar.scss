@@ -1,28 +1,30 @@
 @import "./BurgerMenu/_BurgerMenu";
 
-.nav-hidden {
+.nav-full {
   display: flex;
-  padding: $spacing20 $spacing40;
-  justify-content: flex-end;
-  position: relative;
+  justify-content: space-between;
   width: 100%;
-
+  padding: $spacing20 $spacing40;
   @include sm {
-    flex-direction: column;
-    align-items: flex-end;
     padding: $spacing20 $spacing24;
   }
 }
 
-.nav-full {
+.nav-base {
   display: flex;
-  align-items: center;
-  width: 100%;
-  padding: $spacing20 $spacing40;
   justify-content: space-between;
-  @include sm {
-    padding: $spacing20 $spacing24;
-  }
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-open {
+  color: $grey100;
+}
+
+.hidden {
+  display: none;
 }
 
 .nav-links {
@@ -39,13 +41,30 @@
   gap: $spacing40;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #FFFFFF;
-  height: calc(50vh - 70px);
   padding: $spacing24;
-  transition: transform 0.3s ease-in-out;
-  width: 100%;
-  position: absolute;
-  top: 70px;
+  padding-top: $spacing120;
+  transition: transform 1s ease-in-out;
+  height: 100vh;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  overflow: hidden;
+  color: $grey100;
+  background: $blue500;
+  transition: all .5s ease-in-out;
+
+  @include s {
+    display: none;
+  }
+}
+
+.nav-contact {
+  position: absolute;
+  bottom: $spacing24;
+  color: $grey100;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing10;
 }

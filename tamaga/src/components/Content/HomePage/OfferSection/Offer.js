@@ -1,4 +1,3 @@
-import { Loader } from "../../../../utils/Loader.js/Loader";
 import { SliderGallery } from "./Slider";
 
 export const Offer = () => {
@@ -14,10 +13,10 @@ export const Offer = () => {
       <div className="slider-wrapper">
         <SliderGallery />
       </div>
-      <h4 className="H04--bold main-press">Read about us</h4>
-      <div className="main-press-text">
+      <div className="content-half-left-small">
+        <h4 className="H04--bold content-half-title">Read about us</h4>
         <h6 className="H06">Land art of the 21st century. Fly Ranch</h6>
-        <p className="body-text main-press-description">
+        <p className="body-text content-half-text">
           “A spiral and colourful earth wall surrounds a secret orchard, leading
           to a centralwater and energy collector. Source is a contemporary
           desert hortus conclusus where low-tech knowledge mixes with modern
@@ -35,10 +34,10 @@ export const Offer = () => {
           Read more
         </a>
       </div>
-      <div className="main-press-image">
+      <div className="content-half-right-big">
         <img
           className="main-press-img"
-          src="https://firebasestorage.googleapis.com/v0/b/tamaga-website.appspot.com/o/projects%2Fsor-publication-2.jpg?alt=media&token=4ddeff14-9638-4ebd-a0ae-8c901c9c24fb"
+          src="https://firebasestorage.googleapis.com/v0/b/tamaga-website.appspot.com/o/projects%2Fsor-publication-cover.jpg?alt=media&token=2a484329-1c13-4c3c-9fb3-e6564ed48497"
           alt="source publication"
         />
       </div>

@@ -1,5 +1,5 @@
-import { UnderConstruction } from "../../../utils/Messages/UnderConstruction";
+import { Message } from "../../../utils/Messages/Message";
 
 export const SingleProject = () => {
-  return <UnderConstruction />;
+  return <Message message={"underConstruction"} />;
 };

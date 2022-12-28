@@ -8,19 +8,8 @@
 🛠 Tools: JS + React, Firebase, SASS.
 
 🎨 Design: made in Figma + create design system for the project.
+Check it on my [behance](https://www.behance.net/gallery/160031213/Tamaga-studio-architecture-website)
 <br/>
 <br/>
+<img src="https://user-images.githubusercontent.com/98839155/209828267-f3d6dcab-a90e-4d18-ab2a-276591e9b063.jpg" width="200" >
 
-* Homepage project made on 12-columns grid:
-
-<img src="https://user-images.githubusercontent.com/98839155/200055562-8c42263f-43df-4c8e-8396-07e318a8254c.JPG" width="200" >
-<br/>
-
-* Project list:
-
-<img src="https://user-images.githubusercontent.com/98839155/200055924-72c5b854-c164-4776-9ea8-db52d437b8fc.png" width="200" >
-<br/>
-
-* And design system for the website, used also is CSS:
-
-<img src="https://user-images.githubusercontent.com/98839155/200056015-75044376-d5e9-4af9-bd2f-bb640681a0dc.JPG" width="200" >

@@ -1,15 +1,41 @@
-# tamaga-website
+<p align="center">
+<img src="https://user-images.githubusercontent.com/98839155/210230675-a267f942-f319-458d-8955-c486ace77e1e.png"  alt="tamaga website cover">
+</p>
 
-=======
+## Project Overview 🎉
+
 **Website for architecture studio.**  ***Work in progress 🏗***
 
+## Tech/framework used 🔧
 
+| Tech                                                  | Description                               |
+| ----------------------------------------------------- | ----------------------------------------- |
+| [React](https://reactjs.org/)                         | Javascript Library                        |
+| [Firebase](https://firebase.google.com/)              | Google database                           |
+| [SASS](https://sass-lang.com/)                        | Css extension                             |
+| [Eslint](https://eslint.org/)                         | For code check                            |
+| [Prettier](https://prettier.io/)                      | Code formatter                            |
 
-🛠 Tools: JS + React, Firebase, SASS.
+## Design 🎨
 
-🎨 Design: made in Figma + create design system for the project.
+Design: made in Figma + create design system for the project.
 Check it on my [behance](https://www.behance.net/gallery/160031213/Tamaga-studio-architecture-website)
-<br/>
-<br/>
-<img src="https://user-images.githubusercontent.com/98839155/209828267-f3d6dcab-a90e-4d18-ab2a-276591e9b063.jpg" width="200" >
 
+## Screenshots 📺
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/98839155/209828267-f3d6dcab-a90e-4d18-ab2a-276591e9b063.jpg" alt="Screenshot">
+</p>
+
+
+## Installation 💾
+
+```bash
+
+git clone https://github.com/agatagree/tamaga-website.git
+
+npm install
+
+npm run start
+
+```

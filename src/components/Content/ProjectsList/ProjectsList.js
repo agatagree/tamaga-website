@@ -3,7 +3,7 @@ import { getDataFromSnapshot } from "../../../api/firebaseGetData";
 import { projectsCollection } from "../../../api/firebaseIndex";
 import { useEffect, useState } from "react";
 import { Loader } from "../../../utils/Loader.js/Loader";
-import { ImgCard } from "../../../utils/ImgCard/ImgCard";
+import { Card } from "../../../utils/Card/Card";
 
 export const ProjectsList = () => {
   const [projects, setProjects] = useState({});
@@ -21,22 +21,18 @@ export const ProjectsList = () => {
   }
 
   return (
-    <div>
+    <div className="gallery-wrapper">
       {projects ? (
-          <div className=" content-grid-margin40 gallery">
-            {projects.map((singleProject) => (
-              <div className="gallery-card">
-                <ImgCard key={singleProject.id} singleProject={singleProject} />
-                <h6 className="H06 projectList-card-title">
-                  {singleProject.title}
-                </h6>
-              </div>
-            ))}
-          </div>
+        <div className=" content-grid-margin40 gallery">
+          {projects.map((singleProject) => (
+            <div className="gallery-card">
+              <Card key={singleProject.id} singleProject={singleProject} gallery/>
+            </div>
+          ))}
+        </div>
       ) : (
         <Loader />
       )}
-
     </div>
   );
 };

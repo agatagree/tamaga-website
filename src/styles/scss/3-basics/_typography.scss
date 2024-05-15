@@ -51,7 +51,16 @@ body {
   @include sm {
     font-size: $font-size24;
   }
+
+  &--gallery-card {
+    @extend .H04;
+    @include lg {
+      font-size: $font-size24;
+    }
+  }
 }
+
+
 
 .H05 {
   font-weight: $font-weights400;

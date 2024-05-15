@@ -8,6 +8,7 @@ import { About } from "./components/Content/About/About";
 import { Contact } from "./components/Content/Contact/Contact";
 import { SingleProject } from "./components/Content/SingleProject/SingleProject";
 import { Message } from "./utils/Messages/Message";
+import { UiKit } from "./styles/UiKit";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/projects/:id" element={<SingleProject />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/uiKit" element={<UiKit />} />
               </Route>
               <Route path="*" element={<Message message={"pageNotFound"} />} />
             </Routes>

@@ -1,9 +1,9 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyBMI2HU601lwI8V_VV6al9zIxFY3y9bgw8",
-  authDomain: "tamaga-website.firebaseapp.com",
-  projectId: "tamaga-website",
-  storageBucket: "tamaga-website.appspot.com",
-  messagingSenderId: "419506125692",
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  measurementId: process.env.REACT_APP_MEASURMENT_ID,
   appId: "1:419506125692:web:425f3f0aeb809a961f42f9",
-  measurementId: "G-ZR1VBL12X1"
+  projectId: "tamaga-website",
 };

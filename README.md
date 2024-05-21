@@ -36,6 +36,8 @@ git clone https://github.com/agatagree/tamaga-website.git
 
 npm install
 
+Create .env file with proper keys
+
 npm run start
 
 ```

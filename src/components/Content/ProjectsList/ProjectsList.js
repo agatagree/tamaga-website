@@ -1,4 +1,4 @@
-import { onSnapshot } from "firebase/firestore";
+import { onSnapshot, query, orderBy } from "firebase/firestore";
 import { getDataFromSnapshot } from "../../../api/firebaseGetData";
 import { projectsCollection } from "../../../api/firebaseIndex";
 import { useEffect, useState } from "react";
@@ -10,10 +10,12 @@ export const ProjectsList = () => {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    onSnapshot(projectsCollection, (project) => {
+    const q = query(projectsCollection, orderBy("orderNumber"));
+    const unsubsribe = onSnapshot(q, (project) => {
       setProjects(getDataFromSnapshot(project));
       setLoad(true);
     });
+    return unsubsribe;
   }, [load]);
 
   if (load === false) {
@@ -23,10 +25,10 @@ export const ProjectsList = () => {
   return (
     <div className="gallery-wrapper">
       {projects ? (
-        <div className=" content-grid-margin40 gallery">
+        <div className="content-grid-margin40 gallery">
           {projects.map((singleProject) => (
-            <div className="gallery-card">
-              <Card key={singleProject.id} singleProject={singleProject} gallery/>
+            <div className="gallery-card" key={singleProject.id}>
+              <Card singleProject={singleProject} gallery />
             </div>
           ))}
         </div>

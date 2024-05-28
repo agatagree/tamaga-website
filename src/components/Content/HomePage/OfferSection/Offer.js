@@ -17,7 +17,6 @@ export const Offer = () => {
     );
     const unsubscribe = onSnapshot(queryRequest, (project) => {
       setProjects(getDataFromSnapshot(project));
-      console.log(project);
       setLoad(true);
     });
     return unsubscribe;

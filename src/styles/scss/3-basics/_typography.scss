@@ -1,7 +1,7 @@
 body {
   letter-spacing: 0;
   color: $blue500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 //Header
@@ -54,13 +54,13 @@ body {
 
   &--gallery-card {
     @extend .H04;
+    text-align: center;
+
     @include lg {
       font-size: $font-size24;
     }
   }
 }
-
-
 
 .H05 {
   font-weight: $font-weights400;
@@ -109,12 +109,11 @@ body {
   line-height: $font-lh120;
 }
 
-
 //Body
 @mixin text {
   letter-spacing: 0;
   color: $blue500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: $font-weights400;
   line-height: $font-lh140;
 }

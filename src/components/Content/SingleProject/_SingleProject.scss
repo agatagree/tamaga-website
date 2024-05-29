@@ -1,0 +1,12 @@
+.single-project-description {
+  @include content-half-responsive();
+  grid-column: col-start 9 / span 5;
+}
+
+.single-project-gallery-section {
+  margin-top: $spacing80;
+  margin-left: $spacing40;
+  grid-column: col-start 1 / span 13;
+  background-color: lightsteelblue;
+  max-height: 80svh;
+}

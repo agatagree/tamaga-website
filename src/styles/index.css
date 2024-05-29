@@ -469,6 +469,29 @@ body {
   }
 }
 
+.content-wrapper, .content-wrapper--column {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 180px;
+}
+@media (max-width: 576px) {
+  .content-wrapper, .content-wrapper--column {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1500px) {
+  .content-wrapper, .content-wrapper--column {
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+}
+.content-wrapper--column {
+  flex-direction: column;
+}
+
 .content-half-left-small {
   display: flex;
   flex-direction: column;
@@ -508,6 +531,25 @@ body {
 }
 @media (max-width: 768px) {
   .content-half-left-big {
+    grid-column: col-start 1/span 12;
+  }
+}
+
+.content-half-left-big-full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-column: col-start 1/span 6;
+}
+@media (max-width: 992px) {
+  .content-half-left-big-full {
+    grid-column: col-start 2/span 10;
+  }
+}
+@media (max-width: 768px) {
+  .content-half-left-big-full {
     grid-column: col-start 1/span 12;
   }
 }
@@ -1091,8 +1133,6 @@ body {
 }
 
 .gallery {
-  margin-top: 180px;
-  margin-bottom: 180px;
   gap: 20px;
   justify-content: center;
 }
@@ -1122,8 +1162,6 @@ body {
 @media (max-width: 576px) {
   .gallery {
     grid-auto-rows: 220px;
-    margin-top: 120px;
-    margin-bottom: 120px;
   }
 }
 
@@ -2329,4 +2367,31 @@ body {
     grid-row-start: auto;
     grid-row-end: auto;
   }
+}
+
+.single-project-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-column: col-start 9/span 5;
+}
+@media (max-width: 992px) {
+  .single-project-description {
+    grid-column: col-start 2/span 10;
+  }
+}
+@media (max-width: 768px) {
+  .single-project-description {
+    grid-column: col-start 1/span 12;
+  }
+}
+
+.single-project-gallery-section {
+  margin-top: 80px;
+  margin-left: 40px;
+  grid-column: col-start 1/span 13;
+  background-color: lightsteelblue;
+  max-height: 80svh;
 }/*# sourceMappingURL=index.css.map */

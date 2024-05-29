@@ -1,10 +1,11 @@
-import { collection } from "firebase/firestore";
+import { collection, doc } from "firebase/firestore";
 import { db } from "./firebase";
 
 export const collectionProjects = "projects";
 export const projectStorage = "/projects";
 
 export const projectsCollection = collection(db, collectionProjects);
+export const singleProject = (docId) => doc(db, collectionProjects, docId);
 
 export const urlStorage =
   "https://firebasestorage.googleapis.com/v0/b/devs-project-edf3a.appspot.com/o/images%2F";

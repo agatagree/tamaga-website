@@ -23,7 +23,7 @@ export const ProjectsList = () => {
   }
 
   return (
-    <div className="gallery-wrapper">
+    <div className="content-wrapper">
       {projects ? (
         <div className="content-grid-margin40 gallery">
           {projects.map((singleProject) => (

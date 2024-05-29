@@ -15,8 +15,6 @@
 }
 
 .gallery {
-  margin-top: $spacing180;
-  margin-bottom: $spacing180;
   gap: $spacing20;
   justify-content: center;
 
@@ -41,9 +39,6 @@
 
   @include sm {
     grid-auto-rows: 220px;
-    margin-top: $spacing120;
-    margin-bottom: $spacing120;
-
   }
 }
 

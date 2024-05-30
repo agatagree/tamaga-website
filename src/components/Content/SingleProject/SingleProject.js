@@ -38,23 +38,21 @@ export const SingleProject = () => {
               <p className="body-text">{project.description}</p>
             </div>
           </div>
-          {project.img &&
-            project.img.length >
-              0(
-                <div className="single-project-gallery-section">
-                  <swiper-container space-between="40" slides-per-view="auto">
-                    {project.img.map((slide, index) => (
-                      <swiper-slide key={index}>
-                        <img
-                          className="slide-img"
-                          src={slide}
-                          alt="project.title"
-                        />
-                      </swiper-slide>
-                    ))}
-                  </swiper-container>
-                </div>
-              )}
+          {project.img && project.img.length > 0 && (
+            <div className="single-project-gallery-section">
+              <swiper-container space-between="40" slides-per-view="auto">
+                {project.img.map((slide, index) => (
+                  <swiper-slide key={index}>
+                    <img
+                      className="slide-img"
+                      src={slide}
+                      alt="project.title"
+                    />
+                  </swiper-slide>
+                ))}
+              </swiper-container>
+            </div>
+          )}
         </div>
       ) : (
         <Loader />

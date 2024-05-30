@@ -26,6 +26,11 @@
   @include sm {
     margin: 0 $spacing24;
   }
+
+  &--full {
+    @extend .content-grid-margin40;
+    max-width: 100%;
+  }
 }
 
 .content-grid-margin24 {
@@ -48,7 +53,7 @@
   width: 100%;
   justify-content: center;
   margin-top: $spacing120;
-  margin-bottom: $spacing180;
+  margin-bottom: $spacing120;
 
   @include sm {
     margin-top: $spacing120;

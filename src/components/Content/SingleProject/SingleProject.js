@@ -3,11 +3,14 @@ import { onSnapshot } from "firebase/firestore";
 import { Loader } from "../../../utils/Loader.js/Loader";
 import { useParams } from "react-router-dom";
 import { singleProject } from "../../../api/firebaseIndex";
+import { register } from "swiper/element/bundle";
 
 export const SingleProject = () => {
   const [project, setProject] = useState({});
   const [load, setLoad] = useState(false);
   const { id } = useParams();
+
+  register();
 
   useEffect(() => {
     const docRef = singleProject(id);
@@ -26,7 +29,7 @@ export const SingleProject = () => {
     <>
       {project ? (
         <div className="content-wrapper--column">
-          <div className="content-grid-margin40">
+          <div className="content-grid-margin40--full">
             <div className="content-half-left-big-full">
               <h6 className="H06">{project.title}</h6>
               <p className="H07">{project.category}</p>
@@ -35,14 +38,21 @@ export const SingleProject = () => {
               <p className="body-text">{project.description}</p>
             </div>
           </div>
-          <div className="single-project-gallery-section">
-            {" "}
-            <img
-              className="card-img"
-              src={project.img[0]}
-              alt={project.title}
-            />
-          </div>
+          {project.img && project.img.length > 0 && (
+            <div className="single-project-gallery-section">
+              <swiper-container space-between="40" slides-per-view="auto">
+                {project.img.map((slide, index) => (
+                  <swiper-slide key={index}>
+                    <img
+                      className="slide-img"
+                      src={slide}
+                      alt="project.title"
+                    />
+                  </swiper-slide>
+                ))}
+              </swiper-container>
+            </div>
+          )}
         </div>
       ) : (
         <Loader />

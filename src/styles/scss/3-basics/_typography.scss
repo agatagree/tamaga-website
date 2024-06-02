@@ -97,6 +97,10 @@ body {
   font-size: $font-size18;
   line-height: $font-lh120;
 
+  @include sm {
+    font-size: $font-size12;
+  }
+
   &--bold {
     @extend .H07;
     font-weight: $font-weights700;
@@ -135,6 +139,10 @@ body {
 
 .body-text {
   @include body-text();
+
+  @include sm {
+    font-size: $font-size14;
+  }
 }
 
 .body-text-sm {

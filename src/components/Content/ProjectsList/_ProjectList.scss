@@ -33,7 +33,7 @@
 
   @include md {
     grid-auto-rows: minmax(auto, 380px);
-    row-gap: 60px;
+    row-gap: $spacing60;
     grid-column: 1/13;
   }
 

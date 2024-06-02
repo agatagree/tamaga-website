@@ -56,8 +56,8 @@
   margin-bottom: $spacing120;
 
   @include sm {
-    margin-top: $spacing120;
-    margin-bottom: $spacing120;
+    margin-top: $spacing80;
+    margin-bottom: $spacing80;
   }
 
   @include xxl {

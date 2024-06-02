@@ -8,28 +8,21 @@
   margin-left: $spacing40;
   grid-column: col-start 1 / span 13;
   height: 60svh;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.single-project-gallery-section-mobile {
+  margin-top: $spacing80;
+
+  @include s {
+    display: none;
+  }
 }
 
 swiper-container {
   width: 100%;
   height: 100%;
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-swiper-slide img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-}
-
-swiper-slide {
-  width: auto;
 }

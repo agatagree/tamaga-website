@@ -4,6 +4,7 @@ import { Loader } from "../../../utils/Loader.js/Loader";
 import { useParams } from "react-router-dom";
 import { singleProject } from "../../../api/firebaseIndex";
 import { register } from "swiper/element/bundle";
+import { SingleProjectGallery } from "./SingleProjectGallery";
 
 export const SingleProject = () => {
   const [project, setProject] = useState({});
@@ -39,19 +40,18 @@ export const SingleProject = () => {
             </div>
           </div>
           {project.img && project.img.length > 0 && (
-            <div className="single-project-gallery-section">
-              <swiper-container space-between="40" slides-per-view="auto">
-                {project.img.map((slide, index) => (
-                  <swiper-slide key={index}>
-                    <img
-                      className="slide-img"
-                      src={slide}
-                      alt="project.title"
-                    />
-                  </swiper-slide>
-                ))}
-              </swiper-container>
-            </div>
+            <>
+              <div className="single-project-gallery-section">
+                <swiper-container space-between="40" slides-per-view="auto">
+                  <SingleProjectGallery project={project} />
+                </swiper-container>
+              </div>
+              <div className="single-project-gallery-section-mobile">
+                <div className="content-grid-margin40--full">
+                  <SingleProjectGallery project={project} />
+                </div>
+              </div>
+            </>
           )}
         </div>
       ) : (

@@ -15,6 +15,7 @@
 }
 
 .gallery {
+  width: 100%;
   gap: $spacing20;
   justify-content: center;
 
@@ -27,11 +28,11 @@
     grid-auto-rows: 80px;
   }
 
-  @include lg {
-    grid-auto-rows: 60px;
-  }
+  // @include lg {
+  //   grid-auto-rows: 60px;
+  // }
 
-  @include md {
+  @include lg {
     grid-auto-rows: minmax(auto, 380px);
     row-gap: $spacing60;
     grid-column: 1/13;
@@ -45,7 +46,6 @@
 .gallery div {
   border-radius: 4px;
 }
-
 
 @for $i from 1 through 100 {
   $sixthElement: round($i / 6);
@@ -71,7 +71,7 @@
       grid-row: list.slash(($i * 2 + $sixthElement), span 3);
     }
 
-    @include md {
+    @include lg {
       grid-column: 1/13;
       grid-row-start: auto;
       grid-row-end: auto;

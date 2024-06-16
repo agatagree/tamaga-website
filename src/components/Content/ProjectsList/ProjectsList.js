@@ -26,9 +26,9 @@ export const ProjectsList = () => {
     <div className="content-wrapper">
       {projects ? (
         <div className="content-grid-margin40 gallery">
-          {projects.map((singleProject) => (
-            <div className="gallery-card" key={singleProject.id}>
-              <Card singleProject={singleProject} gallery />
+          {projects.map((project) => (
+            <div className="gallery-card" key={project.id}>
+              <Card key={project.id} path={project.imgCover} title={project.title} category={project.category} projectId={project.id} isOverlay gallery/>
             </div>
           ))}
         </div>

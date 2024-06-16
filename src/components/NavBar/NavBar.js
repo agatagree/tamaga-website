@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+import clsx from "clsx";
 
 export const NavBar = ({ logoHidden }) => {
   const [toggle, setToggle] = useState(true);
+  const location = useLocation();
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -18,7 +21,7 @@ export const NavBar = ({ logoHidden }) => {
   }, [toggle]);
 
   return (
-    <nav className="nav-full">
+    <nav className={clsx("nav-full", location.pathname === '/info' && "nav-info")}>
       <div className={toggle ? "nav-base" : " nav-base nav-open"}>
         <NavLink
           className={logoHidden && toggle ? "hidden" : "link18-logo"}
@@ -30,54 +33,23 @@ export const NavBar = ({ logoHidden }) => {
         <BurgerMenu toggle={toggle} setToggle={setToggle} />
       </div>
 
-
       <div className="nav-links">
-        <NavLink
-          className="link18"
-          to="/projects"
-        >
+        <NavLink className="link18" to="/projects">
           projects
         </NavLink>
-        <NavLink
-          className="link18"
-          to="/about"
-        >
-          about
-        </NavLink>
-        <NavLink
-          className="link18"
-          to="/contact"
-        >
-          contact
+        <NavLink className="link18" to="/info">
+          info
         </NavLink>
       </div>
 
-      <div className={toggle ? "hidden" :"nav-links-toggle"}>
-        <NavLink
-          className="link24-t"
-          onClick={handleToggle}
-          to="/projects"
-        >
+      <div className={toggle ? "hidden" : "nav-links-toggle"}>
+        <NavLink className="link24-t" onClick={handleToggle} to="/projects">
           projects
         </NavLink>
-        <NavLink
-          className="link24-t"
-          to="/about"
-          onClick={handleToggle}
-        >
-          about
-        </NavLink>
-        <NavLink
-          className="link24-t"
-          to="/contact"
-          onClick={handleToggle}
-        >
-          contact
+        <NavLink className="link24-t" to="/info" onClick={handleToggle}>
+          info
         </NavLink>
       </div>
-
-
-
       <div className={toggle ? "hidden" : "nav-contact"}>
         <p className="H05--bold">Get in touch</p>
         <a className="link18" href="mailto:ag.tamagastudio@gmail.coml">

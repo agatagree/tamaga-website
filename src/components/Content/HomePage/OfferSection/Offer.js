@@ -38,21 +38,21 @@ export const Offer = () => {
 
       <div className="content-half-left-big">
         <div className="promoted-project-wrapper">
-          <Card key={projects[0].id} singleProject={projects[0]} />
+        <Card key={projects[0].id} path={projects[0].imgCover} title={projects[0].title} category={projects[0].category} projectId={projects[0].id} isOverlay/>
           <NavLink
             to="/projects"
-            className="link14 promoted-project-wrapper-mobile"
+            className="link14 promoted-project-wrapper--mobile"
           >
             See more works
           </NavLink>
         </div>
       </div>
       <div className="content-half-right-big">
-        <div className="promoted-project-wrapper-down">
-          <Card key={projects[1].id} singleProject={projects[1]} />
+        <div className="promoted-project-wrapper--down">
+          <Card key={projects[1].id} path={projects[1].imgCover} title={projects[1].title} category={projects[1].category} projectId={projects[1].id} isOverlay/>
           <NavLink
             to="/projects"
-            className="link14 promoted-project-wrapper-down-web"
+            className="link14 promoted-project-wrapper--down--web"
           >
             See more works
           </NavLink>

@@ -1,0 +1,38 @@
+.info-intro-section {
+  background-color: $grey100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.info-intro-wrapper {
+  margin: $spacing180 0 $spacing80;
+  grid-column: col-start 2 / span 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing80;
+
+  @include md {
+    grid-column: col-start 1 / span 12;
+  }
+  @include lg {
+    margin: $spacing120 0;
+  }
+}
+
+.info-offer-wrapper {
+  margin: $spacing120 0;
+
+  @include lg {
+    margin: $spacing120 0 $spacing40 0;
+  }
+
+  &--right {
+    @extend .info-offer-wrapper;
+
+    @include lg {
+      margin: 0 0 $spacing40;
+    }
+  }
+}

@@ -90,6 +90,11 @@ body {
   @include sm {
     font-size: $font-size16;
   }
+
+  &--bold {
+    @extend .H06;
+    font-weight: $font-weights700;
+  }
 }
 
 .H07 {

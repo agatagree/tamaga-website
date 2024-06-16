@@ -16,23 +16,23 @@
   flex-direction: column;
   justify-content: space-between;
   
-  @include sm {
+  @include lg {
     height: 100%;
   }
 
-  &-mobile {
-    @include sm {
+  &--mobile {
+    @include lg {
       display: none;
     }
   }
 
-  &-down {
+  &--down {
     @extend .promoted-project-wrapper;
     justify-content: end;
 
-    &-web {
+    &--web {
       margin-top: 40px;
-      @include s {
+      @include l {
         display: none;
       }
     }

@@ -7,15 +7,19 @@
   position: relative;
   flex-shrink: 0;
   scroll-snap-align: center;
+  border-radius: 4px;
 
   @include sm {
     min-width: 300px;
   }
 
+  @include lg {
+    height: auto;
+  }
+
   &-img {
     @extend .card-container;
     background-color: $grey100;
-    border-radius: 4px;
     object-fit: cover;
     width: 100%;
     min-width: 100%;

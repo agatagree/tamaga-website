@@ -46,6 +46,12 @@
   @include lg {
     margin: $spacing120 0 $spacing40 0;
   }
+
+  &--mobile-reverse {
+    @include md {
+      margin: 0;
+    }
+  }
 }
 
 .content-wrapper {
@@ -92,6 +98,9 @@
   @include lg {
     margin: $spacing120 0 $spacing40 0;
   }
+  @include md {
+    margin: 0 0 $spacing40 0;
+  }
 }
 
 .content-half-left-big {
@@ -110,6 +119,13 @@
   @include lg {
     margin: $spacing120 0 $spacing40 0;
   }
+
+  &--mobile-reverse {
+    @extend .content-half-right-small;
+    @include lg {
+      margin: 0 0 $spacing40 0;
+    }
+  }
 }
 
 .content-half-right-big {
@@ -117,6 +133,19 @@
   grid-column: col-start 7 / span 5;
   @include lg {
     margin: $spacing40 0 $spacing120 0;
+  }
+}
+
+.content-alternate-mobile {
+  @include content-grid;
+  grid-column: col-start 1 / span 12;
+
+
+  @include lg {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: $spacing80;
+    grid-column: col-start 2 / span 10;
   }
 }
 

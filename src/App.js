@@ -22,17 +22,14 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <ProjectsList />,
-        errorElement: <Message message={"pageNotFound"} />,
       },
       {
         path: "/projects/:id",
         element: <SingleProject />,
-        errorElement: <Message message={"pageNotFound"} />,
       },
       {
         path: "/info",
         element: <Info />,
-        errorElement: <Message message={"pageNotFound"} />,
       },
     ],
   },

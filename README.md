@@ -4,7 +4,7 @@
 
 ## Project Overview 🎉
 
-**Website for architecture studio.**  ***Work in progress 🏗***
+**Website for architecture studio.** [See demo here](https://tamaga-website.web.app/)
 
 ## Tech/framework used 🔧
 
@@ -18,7 +18,7 @@
 
 ## Design 🎨
 
-Design: made in Figma + create design system for the project.
+Design (***Still in progress***): made in Figma + create design system for the project.
 Check it on my [behance](https://www.behance.net/gallery/160031213/Tamaga-studio-architecture-website)
 
 ## Screenshots 📺
